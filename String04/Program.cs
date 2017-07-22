@@ -14,7 +14,7 @@ namespace String04
 
             string text = "One\ttwo, three. four:five six seven";
 
-            string[] words = text.Split(spliterChars);
+            string[] words = text.Split(spliterChars, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var s in words)
             {
